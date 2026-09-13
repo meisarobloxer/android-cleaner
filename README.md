@@ -1,17 +1,51 @@
-# ⚡ Android Cleaner & Diagnostics PRO
+# 📱 Android Cleaner
 
-Графическое приложение на Python (CustomTkinter) для глубокой очистки, настройки и диагностики устройств Android через ADB / MTP.
+**Android Cleaner** — это удобное и современное десктопное приложение для диагностики, оптимизации и очистки устройств на базе Android с использованием подключений ADB и MTP.
 
-## 🚀 Возможности
-- 🧹 Безопасная очистка системного кэша и мусорных файлов.
-- 📦 Менеджер приложений и быстрый авто-снос лишнего софта (Bloatware).
-- 🎮 Оптимизация сети, пинга и выгрузка фоновых процессов для игр.
-- 📊 Полная диагностика состояния АКБ, накопителя, RAM, экрана и режимов подключения.
-- 🔌 Принудительное включение режимов MTP и ADB.
+---
 
-## 🛠️ Установка и запуск
-1. Установите **Python 3.10+** и компоненты **[ADB / Platform-Tools](https://developer.android.com/tools/releases/platform-tools)**.
-2. Включите **Отладку по USB** в настройках разработчика на телефоне.
-3. Установите зависимости:
+## ✨ Основные возможности
+
+* 🔍 **Полная диагностика:** Проверка системного состояния устройства через ADB и MTP.
+* 🧹 **Очистка памяти:** Поиск и удаление неиспользуемых файлов, кеша и мусора.
+* 💻 **Кроссплатформенность:** Готовые сборки для **Windows** (`.exe`) и **macOS** (`.app`).
+* 🎨 **Современный UI:** Удобный графический интерфейс на базе `CustomTkinter`.
+
+---
+
+## 🚀 Быстрый старт
+
+### Запуск из исходного кода
+
+1. Клонируйте репозиторий:
    ```bash
-   pip install -r requirements.txt
+   git clone [https://github.com/meisarobloxer/Android-Cleaner.git](https://github.com/meisarobloxer/Android-Cleaner.git)
+   cd Android-Cleaner
+Установите необходимые зависимости:
+
+Bash
+pip install -r requirements.txt
+Запустите приложение:
+
+Bash
+python main.py
+🛠 Сборка автономного приложения
+Для создания готового исполняемого файла используйте PyInstaller:
+
+Windows (.exe):
+
+Bash
+pyinstaller --noconfirm --onedir --windowed --add-data "assets;assets/" main.py
+macOS (.app):
+
+Bash
+pyinstaller --noconfirm --onedir --windowed --add-data "assets:assets" main.py
+🌐 Социальные сети
+Следите за обновлениями и новыми версиями проекта:
+
+TikTok: @android_cleaner
+
+Instagram: @android_cleaner_github
+
+📜 Лицензия
+Проект распространяется под лицензией MIT.
